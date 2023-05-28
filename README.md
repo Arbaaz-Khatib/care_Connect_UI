@@ -77,13 +77,12 @@ Contributions are welcome! If you have any ideas or suggestions to improve this 
 5. Open a pull request with a detailed description of the changes.
 
 ## License
+Free to use by anyone.
 
-This project is licensed under the [MIT License](LICENSE).
+**Note** 
+- I have used a template provided by Nice page (https://nicepage.com/) only for the home page for demo purpose.
+- Apart from the landing page all work was done from scratch. This project uses HTML, SCSS & Javascript.
 
-## Acknowledgements
-
-- Thanks to the contributors and maintainers of the libraries and frameworks used in this project.
-- Special thanks to the client for considering this project during the pitch phase.
 
 > **Note:**
 > The client pitch for this project did not materialize into a full development engagement. The work showcased here is a demo created for presentation purposes.
