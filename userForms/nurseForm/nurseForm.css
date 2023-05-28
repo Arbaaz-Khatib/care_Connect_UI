@@ -1,0 +1,323 @@
+/*   color variables */
+/*   border radius */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Convergence", sans-serif !important;
+  height: 100%;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem !important;
+  background-color: #767b91 !important;
+}
+
+.formBG {
+  background-color: unset;
+}
+
+.form_1 {
+  width: 100%;
+  align-items: center;
+  margin-top: 3rem;
+}
+
+.form {
+  position: relative;
+  width: auto;
+  height: 5rem;
+  margin: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.form__input, .form__textarea {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: -webkit-fill-available;
+  border: 2px solid #e1e5ee;
+  border-radius: 0.5rem;
+  font-family: inherit;
+  font-size: inherit;
+  color: white;
+  outline: none;
+  padding: 1.25rem;
+  background: none;
+  /* Change border when input focus*/
+}
+.form__input:hover, .form__textarea:hover {
+  border-color: #adffff;
+}
+.form__input:focus, .form__textarea:focus {
+  border-color: #18ffff;
+}
+.form__label {
+  position: absolute;
+  left: 1rem;
+  top: 0.8rem;
+  padding: 0 0.5rem;
+  color: white;
+  cursor: text;
+  transition: top 200ms ease-in, left 200ms ease-in, font-size 200ms ease-in;
+  background-color: #060b23;
+}
+
+input[type=number]::-moz-placeholder {
+  /* Firefox, Chrome, Opera */
+  text-align: center;
+}
+
+input[type=number]:-ms-input-placeholder {
+  /* Firefox, Chrome, Opera */
+  text-align: center;
+}
+
+input[type=number]::placeholder {
+  /* Firefox, Chrome, Opera */
+  text-align: center;
+}
+
+/* 
+1. When the input is in the focus state
+reduce the size of the label and move upwards 
+
+2. Keep label state when content is in input field 
+*/
+.form__input:not(:-moz-placeholder-shown).form__input:not(:focus) ~ .form__label {
+  top: -0.5rem;
+  font-size: 1.2rem;
+  left: 0.8rem;
+}
+.form__input:not(:-ms-input-placeholder).form__input:not(:focus) ~ .form__label {
+  top: -0.5rem;
+  font-size: 1.2rem;
+  left: 0.8rem;
+}
+.form__input:focus ~ .form__label,
+.form__input:not(:placeholder-shown).form__input:not(:focus) ~ .form__label {
+  top: -0.5rem;
+  font-size: 1.2rem;
+  left: 0.8rem;
+}
+
+.form__textarea:not(:-moz-placeholder-shown).form__textarea:not(:focus) ~ .form__label {
+  top: -0.5rem;
+  font-size: 1.2rem;
+  left: 0.8rem;
+}
+
+.form__textarea:not(:-ms-input-placeholder).form__textarea:not(:focus) ~ .form__label {
+  top: -0.5rem;
+  font-size: 1.2rem;
+  left: 0.8rem;
+}
+
+.form__textarea:focus ~ .form__label,
+.form__textarea:not(:placeholder-shown).form__textarea:not(:focus) ~ .form__label {
+  top: -0.5rem;
+  font-size: 1.2rem;
+  left: 0.8rem;
+}
+
+.form-select {
+  display: block !important;
+  width: 100%;
+  padding: 0.375rem 2.25rem 0.375rem 0.75rem;
+  -moz-padding-start: calc(0.75rem - 3px);
+  font-size: 1rem !important;
+  font-weight: 400 !important;
+  line-height: 1.5 !important;
+  color: #ffffff !important;
+  background-color: #060b23 !important;
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: 17px 43px;
+  border: 2px solid #ffffff !important;
+  border-radius: 0.5rem !important;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+#stateDropdown {
+  line-height: 4rem !important;
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+  font-size: 1.6rem !important;
+}
+
+.cbDiv {
+  box-shadow: rgb(0, 0, 0) 2px 6px 18px;
+  border-radius: 0.5rem;
+  font-family: inherit;
+  background-color: #060b23 !important;
+  color: white;
+  outline: none;
+  padding: 2rem;
+  margin: 1rem;
+  background: none;
+  height: auto;
+  width: auto;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.ftco-section {
+  padding: 7em 0;
+}
+
+.ftco-no-pt {
+  padding-top: 0;
+}
+
+.ftco-no-pb {
+  padding-bottom: 0;
+}
+
+.img {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+ul.ks-cboxtags {
+  list-style: none;
+  padding: 2px;
+}
+ul.ks-cboxtags li {
+  display: block;
+}
+ul.ks-cboxtags li label {
+  display: inline-block;
+  background-color: #4f546c;
+  border: 1px solid #f9fbff;
+  border-radius: 25px !important;
+  color: #f9fbff;
+  font-size: inherit;
+  border-radius: 4px;
+  white-space: nowrap;
+  margin: 0 0 10px 0;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  transition: all 0.2s;
+  display: block;
+  margin-bottom: 0rem;
+}
+
+ul.ks-cboxtags li label {
+  padding: 10px 20px;
+  cursor: pointer;
+}
+ul.ks-cboxtags li label::before {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-family: "FontAwesome";
+  font-weight: 900;
+  font-size: 24px;
+  padding: 0;
+  margin-right: 15px;
+  content: "\f1db";
+  color: #f9fbff;
+  transition: transform 0.3s ease-in-out;
+  position: inherit;
+  right: 40px;
+  margin-top: -5px;
+}
+ul.ks-cboxtags li label span {
+  background: #f9e090;
+  font-size: 12px;
+  padding: 2px 5px;
+  border-radius: 30px;
+  color: #f9fbff;
+  margin-left: 10px;
+}
+
+ul.ks-cboxtags li input[type=checkbox]:checked + label::before {
+  content: "\f058";
+  transform: rotate(-360deg);
+  transition: transform 0.3s ease-in-out;
+  color: #091034;
+}
+
+ul.ks-cboxtags li input[type=checkbox]:checked + label {
+  border: 1px solid #ffffff;
+  background-color: #ffffff;
+  color: #091034;
+  transition: all 0.2s;
+}
+ul.ks-cboxtags li input[type=checkbox]:checked + label span {
+  background: #fff;
+  color: #091034;
+}
+
+ul.ks-cboxtags li input[type=checkbox] {
+  display: absolute;
+}
+
+ul.ks-cboxtags li input[type=checkbox] {
+  position: absolute;
+  opacity: 0;
+}
+
+.profile-badge {
+  margin: 1.5rem;
+  padding: 10px;
+  width: auto;
+  height: 160px;
+  position: relative;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.profile-pic {
+  position: absolute;
+  height: 140px;
+  width: 140px;
+  justify-content: center;
+  top: 0px;
+  z-index: 1001;
+  padding: 0px;
+}
+
+.profile-pic img {
+  border-radius: 50%;
+  box-shadow: 0px 0px 5px 0px #c1c1c1;
+  cursor: pointer;
+  width: 140px;
+  height: 140px;
+}
+
+#patientVideo {
+  background-color: unset;
+  justify-content: center;
+  font-size: 1.5rem;
+  color: bisque;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+#datePicker {
+  position: relative;
+  margin-top: 1rem;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  width: 100%;
+}/*# sourceMappingURL=nurseForm.css.map */

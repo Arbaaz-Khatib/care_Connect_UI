@@ -1,0 +1,138 @@
+
+/*   color variables */
+$clr-primary: #18ffff;
+$clr-primary-light: #adffff;
+$clr-primary-dark: #091034;
+$clr-gray100: #f9fbff;
+$clr-gray150: #f4f6fb;
+$clr-gray200: #eef1f6;
+$clr-gray300: #e1e5ee;
+$clr-gray400: #767b91;
+$clr-gray500: #4f546c;
+$clr-gray600: #2a324b;
+$clr-gray700: #161d34;
+$clr-bg: #060b23;
+
+/*   border radius */
+$radius: 0.5rem;
+
+.body{
+    font-family: "Convergence", sans-serif !important;
+    background-color: $clr-gray400 !important;
+}
+
+.card-body{
+    background-color: $clr-bg;
+    color: $clr-gray100;
+
+
+}
+
+
+ul.ks-cboxtags {
+    list-style: none;
+    padding: 2px;
+    li{
+    	display: block;
+    	label{
+				display: inline-block;
+		    background-color: $clr-gray700;
+		    border: 1px solid $clr-gray100;
+		    color: $clr-gray100;
+		    font-size: inherit;
+		    border-radius: 50px;
+		    white-space: nowrap;
+		    margin: 0 0 10px 0;
+		    -webkit-touch-callout: none;
+		    -webkit-user-select: none;
+		    -moz-user-select: none;
+		    -ms-user-select: none;
+		    user-select: none;
+		    -webkit-tap-highlight-color: transparent;
+		    transition: all .2s;
+		    display: block;
+        margin-bottom: 0rem;
+
+    	}
+    }
+}
+
+ul.ks-cboxtags li label {
+    padding: 10px 10px;
+    cursor: pointer;
+    &::before{
+    	display: inline-block;
+	    font-style: normal;
+	    font-variant: normal;
+	    text-rendering: auto;
+	    -webkit-font-smoothing: antialiased;
+	    font-family: "FontAwesome";
+	    font-weight: 900;
+	    font-size: 24px;
+	    padding: 0;
+	    margin-right: 10px;
+	    content: "\f1db";
+	    color: $clr-gray100;
+	    transition: transform .3s ease-in-out;
+	    position: inherit;
+	    right: 40px;
+	    margin-top: -5px;
+    }
+    span{
+    	background: #f9e090;
+    	font-size: 12px;
+    	padding: 2px 5px;
+    	border-radius: 30px;
+    	color: $clr-gray100;
+    	margin-left: 10px;
+    }
+}
+
+
+ul.ks-cboxtags li input[type="checkbox"]:checked + label::before {
+    content: "\f058";
+    transform: rotate(-360deg);
+    transition: transform .3s ease-in-out;
+    color: $clr-primary-dark;
+}
+
+ul.ks-cboxtags li input[type="checkbox"]:checked + label {
+    border: 1px solid #ffffff;
+    background-color: $clr-gray100;
+    color: $clr-primary-dark;
+    transition: all .2s;
+    span{
+    	background: #fff;
+    	color: $clr-primary-dark;
+    }
+}
+
+ul.ks-cboxtags input[type="checkbox"] {
+  display: absolute;
+}
+ul.ks-cboxtags li input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+}
+
+input[type="checkbox"][readonly] {
+    pointer-events: none;
+  }
+
+
+  .gutters-sm {
+    margin-right: -8px;
+    margin-left: -8px;
+}
+
+.gutters-sm>.col, .gutters-sm>[class*=col-] {
+    padding-right: 8px;
+    padding-left: 8px;
+}
+.mb-3, .my-3 {
+    margin-bottom: 1rem!important;
+}
+
+.shadow-none {
+    box-shadow: none!important;
+}

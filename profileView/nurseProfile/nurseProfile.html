@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Font Awesome -->
+<link
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+  rel="stylesheet"
+/>
+<!-- Google Fonts -->
+<link
+  href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+  rel="stylesheet"
+/>
+<!-- MDB -->
+<link
+  href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.2.0/mdb.min.css"
+  rel="stylesheet"
+/>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript" src="../../assets//plugins/multiPicker-master/dist/multipicker.min.js"></script>
+<link rel="stylesheet" href="../../assets/plugins/multiPicker-master/dist/multipicker.min.css">
+
+
+<link rel="stylesheet" href="nurseProfile.css"/>
+    <title> Nurse Profile </title>
+</head>
+<body>
+    <section style="background-color: #767b91 !important;">
+        <div class="container py-5">
+            <div class="row" style="justify-content: space-between;
+            ">
+                <div>
+                  <div class="card mb-4">
+                    <div class="card-body text-center">
+                      <h2 class="my-1"> Nurse Profile</h2>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          <div class="row">
+            <div class="col-lg-4">
+              <div class="card mb-4">
+                <div class="card-body text-center" style="color: white;
+            ">
+                  <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava2.webp" alt="avatar"
+                    class="rounded-circle img-fluid" style="width: 150px;">
+                  <h5 class="my-3">Julia Roberts</h5>
+                  <p class="mb-1">Speciality : Pediatric Care</p>
+                  <p class="mb-5"> Address : Mile Rock , San Francisco, CA</p>
+                  <div class="d-flex justify-content-center mb-2">
+                    <button type="button" class="btn btn-primary" style="width: 80%;font-size: medium">CONTACT JULIA</button>
+                </div>
+              </div>
+              <div class="card mb-4 mb-lg-0">
+                <div class="card-body p-0">
+                  <ul class="list-group list-group-flush rounded-3">
+                    <li class="list-group-item d-flex justify-content-between align-items-center p-3">
+                      <p class="mb-0" style="color: #333333;"> AGE : </p>
+                      <p class="mb-0"> 32 YRS </p>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center p-3">
+                      <p class="mb-0" style="color: #333333;"> GENDER : </p>
+                      <p class="mb-0">FEMALE</p>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center p-3">
+                      <p class="mb-0" style="color: #333333;"> WEIGHT : </p>
+                      <p class="mb-0">175 LBS</p>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center p-3">
+                      <p class="mb-0" style="color: #333333;"> HEIGHT : </p>
+                      <p class="mb-0">175 CM</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="card" style="background-color:#1266f1">
+            </div>
+            </div>
+
+            <div class="col-lg-8">
+              <div class="col-mb-4" id="technicalCB" style="margin-bottom: 1rem;" >
+                <div class="card mb-4 mb-md-0">
+                  <div class="card-body">
+                    <p class="mb-4 d-flex justify-content-center" style="                    font-size: 1.45rem;
+                    background-color: #1266f1;
+                    border-radius: 0.5rem;
+                    height: 3rem;
+                    align-items: center;"> 
+                    TECHNICAL SKILLS
+                    </p>
+                    <div class="d-flex justify-content-center">
+                      
+                      <div class="container" style="padding: 0rem !important;">
+                          <div class="row">
+                            <div class="col-sm">
+                              <ul class="ks-cboxtags">
+                                <li>
+                                  <input
+                                    type="checkbox"
+                                    id="dietNeed_cb1"
+                                    value="Order one"
+                                    checked
+                                    onclick="return false;" onkeydown="e = e || window.event; if(e.keyCode !== 9) return false";
+
+                                  />
+                                  <label for="dietNeed_cb1"> VNS </label>
+                                </li>
+                              </ul>
+                            </div>
+                            <div class="col-sm">
+                              <ul class="ks-cboxtags">
+                                <li>
+                                  <input
+                                    type="checkbox"
+                                    id="dietNeed_cb2"
+                                    value="Order one"
+              
+                                    onclick="return false;" onkeydown="e = e || window.event; if(e.keyCode !== 9) return false";
+                                  />
+                                  <label for="dietNeed_cb2"> WheelChair </label>
+                                </li>
+                              </ul>
+                            </div>
+                            <div class="col-sm">
+                              <ul class="ks-cboxtags">
+                                <li>
+                                  <input
+                                    type="checkbox"
+                                    id="dietNeed_cb3"
+                                    value="Order one"
+                                    checked
+                                    onclick="return false;" onkeydown="e = e || window.event; if(e.keyCode !== 9) return false";
+                                  />
+                                  <label for="dietNeed_cb3"> G Tube/NG Tube/GJ Tube </label>
+                                </li>
+                              </ul>
+                            </div>
+                            <div class="col-sm">
+                              <ul class="ks-cboxtags">
+                                <li>
+                                  <input
+                                    type="checkbox"
+                                    id="dietNeed_cb3"
+                                    value="Order one"
+                                    checked
+                                    onclick="return false;" onkeydown="e = e || window.event; if(e.keyCode !== 9) return false";
+                                  />
+                                  <label for="dietNeed_cb3"> Trech </label>
+                                </li>
+                              </ul>
+                            </div>
+                            <div class="col-sm">
+                              <ul class="ks-cboxtags">
+                                <li>
+                                  <input
+                                    type="checkbox"
+                                    id="dietNeed_cb3"
+                                    value="Order one"
+                                    checked
+                                    onclick="return false;" onkeydown="e = e || window.event; if(e.keyCode !== 9) return false";
+                                  />
+                                  <label for="dietNeed_cb3"> Hoyler Lifts </label>
+                                </li>
+                              </ul>
+                            </div>
+
+                          </div>
+                  </div>
+                  </div>
+                </div>
+              </div>
+              </div> 
+                <div class="col-mb-4" id="dietRequired" style="margin-bottom: 1rem;">
+                    <div class="card mb-4 mb-md-0">
+                      <div class="card-body">
+                        <p class="mb-4 d-flex justify-content-center" style="                    font-size: 1.45rem;
+                        background-color: #1266f1;
+                        border-radius: 0.5rem;
+                        height: 3rem;
+                        align-items: center;"> DIET EXPERIENCE
+                        </p>
+                        <div class="d-flex justify-content-center">
+                          
+                          <div class="container" style="padding: 0rem !important;">
+                              <div class="row">
+                                <div class="col-sm">
+                                  <ul class="ks-cboxtags">
+                                    <li>
+                                      <input
+                                        type="checkbox"
+                                        id="dietNeed_cb1"
+                                        value="Order one"
+                                        checked
+                                        onclick="return false;" onkeydown="e = e || window.event; if(e.keyCode !== 9) return false";
+  
+                                      />
+                                      <label for="dietNeed_cb1"> KETO </label>
+                                    </li>
+                                  </ul>
+                                </div>
+                                <div class="col-sm">
+                                  <ul class="ks-cboxtags">
+                                    <li>
+                                      <input
+                                        type="checkbox"
+                                        id="dietNeed_cb2"
+                                        value="Order one"
+                                        checked
+                                        onclick="return false;" onkeydown="e = e || window.event; if(e.keyCode !== 9) return false";
+                                      />
+                                      <label for="dietNeed_cb2"> Blended </label>
+                                    </li>
+                                  </ul>
+                                </div>
+                                <div class="col-sm">
+                                  <ul class="ks-cboxtags">
+                                    <li>
+                                      <input
+                                        type="checkbox"
+                                        id="dietNeed_cb3"
+                                        value="Order one"
+                                        checked
+                                        onclick="return false;" onkeydown="e = e || window.event; if(e.keyCode !== 9) return false";
+                                      />
+                                      <label for="dietNeed_cb3"> Regular </label>
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                      </div>
+                      </div>
+                    </div>
+                  </div>
+                  </div>
+                  <div class="col-mb-4" id="dietRequired" style="margin-bottom: 1rem;">
+                    <div class="card mb-4 mb-md-0">
+                      <div class="card-body">
+                        <p class="mb-4 d-flex justify-content-center" style="                    font-size: 1.45rem;
+                        background-color: #1266f1;
+                        border-radius: 0.5rem;
+                        height: 3rem;
+                        align-items: center;"> EXPERIENCE WITH EPILEPTIC CARE
+                        </p>
+                        <div class="d-flex justify-content-center">
+                          
+                          <div class="container" style="padding: 0rem !important;">
+                              <div class="row">
+                                <div class="col-sm">
+                                  <ul class="ks-cboxtags">
+                                    <li>
+                                      <input
+                                        type="checkbox"
+                                        id="dietNeed_cb1"
+                                        value="Order one"
+                                        checked
+                                        onclick="return false;" onkeydown="e = e || window.event; if(e.keyCode !== 9) return false";
+  
+                                      />
+                                      <label for="dietNeed_cb1"> YES </label>
+                                    </li>
+                                  </ul>
+                                </div>
+                                <div class="col-sm">
+                                  <ul class="ks-cboxtags">
+                                    <li>
+                                      <input
+                                        type="checkbox"
+                                        id="dietNeed_cb2"
+                                        value="Order one"
+                  
+                                        onclick="return false;" onkeydown="e = e || window.event; if(e.keyCode !== 9) return false";
+                                      />
+                                      <label for="dietNeed_cb2"> NO </label>
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                              <div id="EpilepticInfo">
+                                <div class="card-body">
+                                  <div class="row">
+                                    <hr>
+                                    <div class="col-sm-3">
+                                      <p class="mb-0">Comments :</p>
+                                    </div>
+                                    <div class="col-sm-9">
+                                      <p class="mb-0">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio quis cum voluptatem officiis, aliquid inventore porro similique quae commodi fugiat asperiores quisquam provident corrupti repellendus earum, voluptatum sequi nostrum repudiandae? Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores officia dolore assumenda incidunt, reprehenderit aliquid suscipit nobis ea nemo itaque est perspiciatis aspernatur dicta fuga neque, animi voluptatum in! Vero?</p>
+                                    </div>
+                                  </div>
+                                  <hr>
+                                </div>
+                              </div>
+                              </div>
+                      </div>
+                      </div>
+                    </div>
+                  </div>
+                  </div> 
+            </div> 
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+
+
+      <script type="text/Javascript" src="nurseProfile.js"></script>
+    <!-- MDB -->
+<script
+type="text/javascript"
+src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.2.0/mdb.min.js"
+></script>
+</body>
+</html>

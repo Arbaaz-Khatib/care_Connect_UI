@@ -1,0 +1,331 @@
+
+/*   color variables */
+$clr-primary: #18ffff;
+$clr-primary-light: #adffff;
+$clr-primary-dark: #091034;
+$clr-gray100: #f9fbff;
+$clr-gray150: #f4f6fb;
+$clr-gray200: #eef1f6;
+$clr-gray300: #e1e5ee;
+$clr-gray400: #767b91;
+$clr-gray500: #4f546c;
+$clr-gray600: #2a324b;
+$clr-gray700: #161d34;
+$clr-bg: #060b23;
+
+/*   border radius */
+$radius: 0.5rem;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+ body {
+  font-family: "Convergence", sans-serif !important; 
+  height: 100%;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem !important;
+  background-color: $clr-gray400 !important;
+}
+
+.formBG{
+  background-color: unset;
+}
+.form_1{
+  width: 100%;
+
+  align-items: center;
+  margin-top: 3rem;
+
+
+}
+.form {
+  position: relative;
+  width: auto;
+  height: 5rem;
+  margin: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+
+  
+  &__input,&__textarea{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: -webkit-fill-available;
+    border: 2px solid $clr-gray300;
+    border-radius: $radius;
+    font-family: inherit;
+    font-size: inherit;
+    color: white;
+    outline: none;
+    padding: 1.25rem;
+    background: none;
+    
+    
+    &:hover {
+      border-color: $clr-primary-light;
+    }
+
+    /* Change border when input focus*/
+
+    &:focus {
+      border-color: $clr-primary;
+    }
+  }
+
+  &__label {
+    position: absolute;
+    left: 1rem;
+    top: 0.8rem;
+    padding: 0 0.5rem;
+    color: white;
+    cursor: text;
+    transition: top 200ms ease-in, left 200ms ease-in, font-size 200ms ease-in;
+    background-color: $clr-bg;
+  }
+}
+
+
+
+input[type="number"]::placeholder {
+                 
+  /* Firefox, Chrome, Opera */
+  text-align: center;
+}
+
+/* 
+1. When the input is in the focus state
+reduce the size of the label and move upwards 
+
+2. Keep label state when content is in input field 
+*/
+
+.form__input:focus ~ .form__label,
+.form__input:not(:placeholder-shown).form__input:not(:focus) ~ .form__label {
+  top: -0.5rem;
+  font-size: 1.2rem;
+  left: 0.8rem;
+}
+
+.form__textarea:focus ~ .form__label,
+.form__textarea:not(:placeholder-shown).form__textarea:not(:focus) ~ .form__label {
+  top: -0.5rem;
+  font-size: 1.2rem;
+  left: 0.8rem;
+}
+
+.form-select {
+   
+  display: block !important;
+  width: 100%;
+  padding: 0.375rem 2.25rem 0.375rem 0.75rem;
+  -moz-padding-start: calc(0.75rem - 3px);
+  font-size: 1rem !important; 
+  font-weight: 400 !important;
+  line-height: 1.5 !important;
+  color: #ffffff !important; 
+  background-color: $clr-bg !important; 
+  //background-image: url(data:".image/svg+xml",%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e);
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: 17px 43px;
+  border: 2px solid #ffffff !important;
+  border-radius: 0.5rem !important;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+#stateDropdown{
+  line-height: 4rem !important;
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+  font-size: 1.6rem !important;
+}
+
+// CB
+.cbDiv
+{
+  box-shadow: rgb(0 0 0) 2px 6px 18px;
+    border-radius: $radius;
+    font-family: inherit;
+    background-color: $clr-bg !important;
+    color: white;
+    outline: none;
+    padding: 2rem;
+    margin: 1rem;
+    background: none;
+    height: auto;
+    width: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+
+.ftco-section{
+	padding: 7em 0;
+}
+
+.ftco-no-pt{
+	padding-top: 0;
+}
+.ftco-no-pb{
+	padding-bottom: 0;
+}
+
+//COVER BG
+.img{
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+
+ul.ks-cboxtags {
+    list-style: none;
+    padding: 2px;
+    li{
+    	display: block;
+    	label{
+				display: inline-block;
+		    background-color: $clr-gray500;
+		    border: 1px solid $clr-gray100;
+        border-radius: 25px !important;
+		    color: $clr-gray100;
+		    font-size: inherit;
+		    border-radius: 4px;
+		    white-space: nowrap;
+		    margin: 0 0 10px 0;
+		    -webkit-touch-callout: none;
+		    -webkit-user-select: none;
+		    -moz-user-select: none;
+		    -ms-user-select: none;
+		    user-select: none;
+		    -webkit-tap-highlight-color: transparent;
+		    transition: all .2s;
+		    display: block;
+        margin-bottom: 0rem;
+
+    	}
+    }
+}
+
+ul.ks-cboxtags li label {
+    padding: 10px 20px;
+    cursor: pointer;
+    &::before{
+    	display: inline-block;
+	    font-style: normal;
+	    font-variant: normal;
+	    text-rendering: auto;
+	    -webkit-font-smoothing: antialiased;
+	    font-family: "FontAwesome";
+	    font-weight: 900;
+	    font-size: 24px;
+	    padding: 0;
+	    margin-right: 15px;
+	    content: "\f1db";
+	    color: $clr-gray100;
+	    transition: transform .3s ease-in-out;
+	    position: inherit;
+	    right: 40px;
+	    margin-top: -5px;
+    }
+    span{
+    	background: #f9e090;
+    	font-size: 12px;
+    	padding: 2px 5px;
+    	border-radius: 30px;
+    	color: $clr-gray100;
+    	margin-left: 10px;
+    }
+}
+
+
+ul.ks-cboxtags li input[type="checkbox"]:checked + label::before {
+    content: "\f058";
+    transform: rotate(-360deg);
+    transition: transform .3s ease-in-out;
+    color: $clr-primary-dark;
+}
+
+ul.ks-cboxtags li input[type="checkbox"]:checked + label {
+    border: 1px solid #ffffff;
+    background-color: #ffffff;
+    color: $clr-primary-dark;
+    transition: all .2s;
+    span{
+    	background: #fff;
+    	color: $clr-primary-dark;
+    }
+}
+
+ul.ks-cboxtags li input[type="checkbox"] {
+  display: absolute;
+}
+ul.ks-cboxtags li input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+}
+ 
+
+.profile-badge{
+  margin: 1.5rem;
+  padding:10px;
+  width: auto;
+  height: 160px;
+  position: relative;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.profile-pic{
+  position: absolute;
+  height:140px;
+  width:140px;
+  justify-content: center;
+  top: 0px;
+  z-index: 1001;
+  padding: 0px;
+}
+.profile-pic img{
+ 
+  border-radius: 50%;
+  box-shadow: 0px 0px 5px 0px #c1c1c1;
+  cursor: pointer;
+  width: 140px;
+  height: 140px;
+}
+
+//vide 
+#patientVideo
+{
+  background-color: unset;
+  justify-content: center;
+  font-size: 1.5rem;
+  color: bisque;
+  margin-top: 2rem;
+  margin-bottom: 2rem  
+}
+
+#datePicker{
+  position: relative;
+  margin-top: 1rem;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  width: 100%;
+}
+
+
