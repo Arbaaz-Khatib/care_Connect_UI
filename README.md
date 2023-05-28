@@ -1,17 +1,19 @@
-# care_Connect_UI
+# Healthcare Seeker-Provider Platform
 
-A platform where speciliazed health care seekers can connect with experienced care providers, this was a freelance project which I worked on in DEC-2022.
+![image](https://github.com/Arbaaz-Khatib/care_Connect_UI/assets/55923561/3ce04758-a00d-4018-99ac-8cddd9a3d381)
 
-The client wanted a working UI components for interactive forms, a profile info page & list of user's profiles.   
+This project aims to create a specialized healthcare seeker-provider platform where users can connect with experienced care providers. It provides a user-friendly interface with interactive forms, a profile info page, and a list of user profiles.
 
-As per the requirement I created animated checkboxes, stylized input's & card styled profile components that can be implemented. 
+> **Note:**
+> The home page template used in this project was sourced from nicepage.com. It was utilized solely for demonstration purposes during the client pitch. The actual development work focused on creating the UI components and functionality described below.
 
-## Table of Contents
+## Features
 
-- [Demo](#demo)
-- [Features](#features)
+- Interactive Forms: Engage users with animated checkboxes and stylized inputs for an enhanced data collection experience.
+- Profile Info Page: Display user details, qualifications, and expertise in an attractive and informative layout.
+- User Profile List: Browse and search through a list of healthcare seekers and providers with ease.
 
-## Demo
+## Preview
 
 **The landing page :**
 
@@ -43,24 +45,47 @@ As per the requirement I created animated checkboxes, stylized input's & card st
 
 ![care_connect_demo_main](https://github.com/Arbaaz-Khatib/care_Connect_UI/assets/55923561/7fbae461-504f-4439-99a4-6d51621d5deb)
 
-<br />
 
 ![care_connect_demo_2](https://github.com/Arbaaz-Khatib/care_Connect_UI/assets/55923561/165d1c55-9676-4dd7-ba51-b4e8ca001d45)
 
+## Technologies Used
 
-## Features
+- HTML: Markup language used to structure the web pages.
+- SCSS: CSS preprocessor utilized for styling the UI components.
+- JavaScript: Basic JavaScript functionality implemented for interactive features, validation, and form submission.
 
-- Interactive Form.
-- Animated checkboxes that look cool.
-- Hide show of form elements based on selected options.
-- Card styled profile pages.
-- Date picker.
+## Getting Started
 
+To get a local copy of the project up and running, follow these steps:
+
+1. Clone the repository: `git clone https://github.com/your-username/healthcare-platform.git`
+2. Navigate to the project directory: `cd healthcare-platform`
+3. Open the `index.html` file in your preferred web browser.
+
+## Usage
+
+- Fill out the interactive forms to provide necessary information.
+- Explore user profiles in the list view and click on each profile for more details.
+- Edit your own profile information on the profile info page.
+
+## Contributing
+
+Contributions are welcome! If you have any ideas or suggestions to improve this project, please follow these steps:
+
+1. Fork the repository.
+2. Create a new branch: `git checkout -b feature/your-feature`
+3. Make your changes and commit them: `git commit -m 'Add your feature'`
+4. Push to the branch: `git push origin feature/your-feature`
+5. Open a pull request with a detailed description of the changes.
 
 ## License
-Free to use by anyone.
 
-**Note** 
-- I have used a template provided by Nice page (https://nicepage.com/) only for the home page for demo purpose.
-- Apart from the landing page all work was done from scratch. This project uses HTML, SCSS & Javascript.
+This project is licensed under the [MIT License](LICENSE).
 
+## Acknowledgements
+
+- Thanks to the contributors and maintainers of the libraries and frameworks used in this project.
+- Special thanks to the client for considering this project during the pitch phase.
+
+> **Note:**
+> The client pitch for this project did not materialize into a full development engagement. The work showcased here is a demo created for presentation purposes.
