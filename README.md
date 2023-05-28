@@ -27,8 +27,7 @@ This project aims to create a specialized healthcare seeker-provider platform wh
 
 **View Profile's :**
 
-
-![image](https://github.com/Arbaaz-Khatib/care_Connect_UI/assets/55923561/ccce1ba7-3d6f-42e6-ae25-6e325338abd7)
+![image](https://github.com/Arbaaz-Khatib/care_Connect_UI/assets/55923561/530b24bf-a494-4c89-8969-d1586fe48486)
 
 **Detailed Profile View :**
 
@@ -45,8 +44,7 @@ This project aims to create a specialized healthcare seeker-provider platform wh
 
 ![care_connect_demo_main](https://github.com/Arbaaz-Khatib/care_Connect_UI/assets/55923561/7fbae461-504f-4439-99a4-6d51621d5deb)
 
-
-![care_connect_demo_2](https://github.com/Arbaaz-Khatib/care_Connect_UI/assets/55923561/165d1c55-9676-4dd7-ba51-b4e8ca001d45)
+![profile_demo](https://github.com/Arbaaz-Khatib/care_Connect_UI/assets/55923561/61b2278c-65e1-4b9c-9e84-e2b02cf0f102)
 
 ## Technologies Used
 
